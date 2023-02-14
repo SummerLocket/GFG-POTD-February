@@ -4,10 +4,6 @@ class Solution{
 public:
     
     int minimumCost(vector<vector<int>> &colors, int N){
-        if(N==0){
-            return 0;
-        }
-        
         vector<vector<int>> dp(N,vector<int>(3,0));
         
         dp[0][0] = colors[0][0];
